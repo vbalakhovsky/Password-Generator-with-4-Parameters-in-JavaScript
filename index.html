@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Password Generator</h1>
+      </header>
+      <div class="card">
+        <div class="card-header">
+          <h2>Generate a Password</h2>
+        
+        </div>
+        <div class="card-body">
+          <input id ="pw" class="password" name="password" placeholder = "Type Your password Here" type="text" />
+         
+          <ul class="helper-text">
+            <li class="lengthMin" id = "Minimum length">Must be at least 8 characters long.</li>
+            <li class="lengthMax" id = "Maximum length"> Cannot be more than 20 characters long.</li>
+            <li class="lowercase" id ="lowercase" >Must contain a lowercase letter.</li>
+            <li class="uppercase" id = "uppercase">Must contain an uppercase letter.</li>
+            <li class="special" id = "special">Must contain a special character.</li>
+            <li class="number" id = "number" >Must contain a number.</li>
+        
+        <p id = "#Status"></p>
+        
+       
+          </div>
+        <div class="card-footer">
+          <input type="button" id="BTN" class="btn" value="Generate Password" onclick="writePassword()"> </input>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
